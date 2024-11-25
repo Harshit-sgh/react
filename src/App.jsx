@@ -11,17 +11,17 @@ const App = () => {
 
     // Mock weather data
     const mockWeatherData = {
-        Calcutta: {
+        London: {
             name: "London",
             weather: [{ description: "clear sky" }],
             main: { temp: 18, humidity: 56 },
         },
-        Uttrakhand: {
+        Paris: {
             name: "Paris",
             weather: [{ description: "light rain" }],
             main: { temp: 12, humidity: 80 },
         },
-        Pune: {
+        Tokyo: {
             name: "Tokyo",
             weather: [{ description: "overcast clouds" }],
             main: { temp: 20, humidity: 70 },
@@ -35,7 +35,7 @@ const App = () => {
             setError("");
         } else {
             setWeather(null);
-            setError("City not found. Try Calcutta, Uttrakhand, or Pune.");
+            setError("City not found. Try London, Paris, or Tokyo.");
         }
     };
 
